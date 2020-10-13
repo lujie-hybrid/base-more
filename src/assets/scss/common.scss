@@ -1,0 +1,204 @@
+@import "./reset.scss";
+$fotUrl: "http://10.168.1.186:8000/ow_image";
+
+@font-face {
+  font-family: "pf";
+  src: url("#{$fotUrl}/pf.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "sy";
+  src: url("#{$fotUrl}/sy.otf") format("opentype");
+}
+
+body {
+  font-family: pf;
+}
+.sy {
+  font-family: sy;
+}
+
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 8px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条中的滚动块*/
+  border-radius: 8px;
+  background: #c2c0c0;
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面的轨道*/
+  border-radius: 8px;
+  background: #ededed;
+}
+
+.scrollHide ::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  display: none;
+  width: 0 !important;
+  height: 0;
+}
+.scrollMineHide::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  display: none;
+  width: 0 !important;
+  height: 0;
+}
+
+// 布局
+.fx {
+  display: flex;
+}
+.fx-h-c {
+  justify-content: center;
+}
+.fx-h-end {
+  justify-content: flex-end;
+}
+.fx-v-c {
+  align-items: center;
+}
+.fx-v {
+  flex-direction: column;
+}
+.fx-h-sp {
+  justify-content: space-between;
+}
+.fx-wrap {
+  flex-wrap: wrap;
+}
+.fx-1 {
+  flex: 1;
+}
+
+// 字体
+.fw5 {
+  font-weight: 500;
+}
+.fw {
+  font-weight: bold;
+}
+.fwm {
+  font-weight: normal;
+}
+.f12 {
+  font-size: 12px;
+}
+.f14 {
+  font-size: 14px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f18 {
+  font-size: 18px;
+}
+.f20 {
+  font-size: 20px;
+}
+.f22 {
+  font-size: 22px;
+}
+.f24 {
+  font-size: 24px;
+}
+.f28 {
+  font-size: 28px;
+}
+//行高
+.lh20 {
+  line-height: 20px;
+}
+.lh22 {
+  line-height: 22px;
+}
+.lh24 {
+  line-height: 24px;
+}
+//对齐
+.tj {
+  text-align: justify;
+}
+.line-wrap {
+  white-space: pre-line;
+}
+.line-pre {
+  white-space: pre;
+}
+// 颜色
+.c-fff {
+  color: $txt-fff;
+}
+.c-333 {
+  color: $txt-3;
+}
+.c-666 {
+  color: $txt-6;
+}
+.c-999 {
+  color: $txt-8;
+}
+.c-403 {
+  color: $txt-4;
+}
+// 居中
+.h-auto {
+  margin: 0 auto;
+}
+
+// 间距
+.mt5 {
+  margin-top: 5px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mt15 {
+  margin-top: 15px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt40 {
+  margin-top: 40px;
+}
+.pb120 {
+  padding-bottom: 120px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+.ml40 {
+  margin-left: 40px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+
+// 定位
+.rel {
+  position: relative;
+}
+// 手势
+.cur {
+  cursor: pointer;
+}
+// 地图信息窗体
+.about-info {
+  cursor: pointer;
+  width: 350px;
+  padding: 23px 0 0 38px;
+  height: 120px;
+  background: url("~@/assets/images/info.png") no-repeat left top;
+}

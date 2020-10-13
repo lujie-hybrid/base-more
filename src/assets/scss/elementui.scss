@@ -1,0 +1,23 @@
+.pro-tab {
+  .el-tabs__header{
+      margin-bottom: 30px;
+  }  
+  .el-tabs__nav-scroll {
+    padding-top: 28px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .el-tabs__item {
+    color: $txt-4;
+    font-size: 12px;
+    height: 33px;
+    line-height: normal;
+  }
+  .el-tabs__item.is-active {
+    color: $txt-2;
+    font-weight: bold;
+  }
+  .el-tabs__active-bar {
+    background-color: $txt-2;
+  }
+}
